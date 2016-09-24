@@ -1,0 +1,4 @@
+[STYLE NewStyle:Font=Segoe UI Light;Size=72;Color=255,255,255;Style=Italic;Background=255,70,00]
+[DOCUMENT:A4;OrangeRed]
+[NAME:Example]
+{NewStyle:100,180}Ninponix

@@ -1,0 +1,454 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2E5F92F8-6FE1-4694-AFBC-32B14ABFC721}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ninponix_Office</RootNamespace>
+    <AssemblyName>Ninponix Office</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>3</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <LangVersion>6</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>
+    </DocumentationFile>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Ninponix Office.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Ninponix_Office.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>4B0E9FB13EFA1943B04373DF3055316B6AACCE61</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Ninponix Office_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DirectoryDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DirectoryDialog.Designer.cs">
+      <DependentUpon>DirectoryDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Donations\DonateUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Donations\DonateUs.Designer.cs">
+      <DependentUpon>DonateUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Find.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Find.Designer.cs">
+      <DependentUpon>Find.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LearnMore\VisualDocument.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LearnMore\VisualDocument.Designer.cs">
+      <DependentUpon>VisualDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Links.cs" />
+    <Compile Include="Log.cs" />
+    <Compile Include="Message.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Message.Designer.cs">
+      <DependentUpon>Message.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageIcon.cs" />
+    <Compile Include="Notification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notification.Designer.cs">
+      <DependentUpon>Notification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options\Options.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Options\Options.Designer.cs">
+      <DependentUpon>Options.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation.Designer.cs">
+      <DependentUpon>Presentation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationToolBox\AddImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationToolBox\AddImage.Designer.cs">
+      <DependentUpon>AddImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationToolBox\AddStyle_NAME.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationToolBox\AddStyle_NAME.Designer.cs">
+      <DependentUpon>AddStyle_NAME.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationToolBox\changeAspectRatio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationToolBox\changeAspectRatio.Designer.cs">
+      <DependentUpon>changeAspectRatio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationToolBox\choose_style.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationToolBox\choose_style.Designer.cs">
+      <DependentUpon>choose_style.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationToolBox\Export.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationToolBox\Export.Designer.cs">
+      <DependentUpon>Export.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationToolBox\ExportPres.cs" />
+    <Compile Include="PresentationToolBox\InformationEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationToolBox\InformationEditor.Designer.cs">
+      <DependentUpon>InformationEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationToolBox\InsertText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationToolBox\InsertText.Designer.cs">
+      <DependentUpon>InsertText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationToolBox\PresentationViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationToolBox\PresentationViewer.Designer.cs">
+      <DependentUpon>PresentationViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationToolBox\SlideManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationToolBox\SlideManagement.Designer.cs">
+      <DependentUpon>SlideManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationToolBox\StyleManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationToolBox\StyleManagement.Designer.cs">
+      <DependentUpon>StyleManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation_Editor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation_Editor.Designer.cs">
+      <DependentUpon>Presentation_Editor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reset.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Solutions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Solutions.Designer.cs">
+      <DependentUpon>Solutions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="txtDocument.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="txtDocument.Designer.cs">
+      <DependentUpon>txtDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VisualDocument.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VisualDocument.designer.cs">
+      <DependentUpon>VisualDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VisualDocumentEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VisualDocumentEditor.Designer.cs">
+      <DependentUpon>VisualDocumentEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VisualDocumentToolBox\AddImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VisualDocumentToolBox\AddImage.Designer.cs">
+      <DependentUpon>AddImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VisualDocumentToolBox\AddStyle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VisualDocumentToolBox\AddStyle.Designer.cs">
+      <DependentUpon>AddStyle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VisualDocumentToolBox\AddText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VisualDocumentToolBox\AddText.Designer.cs">
+      <DependentUpon>AddText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VisualDocumentToolBox\DocumentInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VisualDocumentToolBox\DocumentInfo.Designer.cs">
+      <DependentUpon>DocumentInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VisualDocumentToolBox\ExportVD.cs" />
+    <Compile Include="VisualDocumentToolBox\ExportWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VisualDocumentToolBox\ExportWizard.Designer.cs">
+      <DependentUpon>ExportWizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VisualDocumentToolBox\ExternalOpen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VisualDocumentToolBox\ExternalOpen.Designer.cs">
+      <DependentUpon>ExternalOpen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VisualDocumentToolBox\StyleManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VisualDocumentToolBox\StyleManager.Designer.cs">
+      <DependentUpon>StyleManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VisualDocumentToolBox\VDReader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VisualDocumentToolBox\VDReader.Designer.cs">
+      <DependentUpon>VDReader.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DirectoryDialog.resx">
+      <DependentUpon>DirectoryDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Donations\DonateUs.resx">
+      <DependentUpon>DonateUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Find.resx">
+      <DependentUpon>Find.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LearnMore\VisualDocument.resx">
+      <DependentUpon>VisualDocument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Message.resx">
+      <DependentUpon>Message.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notification.resx">
+      <DependentUpon>Notification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\Options.resx">
+      <DependentUpon>Options.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation.resx">
+      <DependentUpon>Presentation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationToolBox\AddImage.resx">
+      <DependentUpon>AddImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationToolBox\AddStyle_NAME.resx">
+      <DependentUpon>AddStyle_NAME.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationToolBox\changeAspectRatio.resx">
+      <DependentUpon>changeAspectRatio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationToolBox\choose_style.resx">
+      <DependentUpon>choose_style.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationToolBox\Export.resx">
+      <DependentUpon>Export.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationToolBox\InformationEditor.resx">
+      <DependentUpon>InformationEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationToolBox\InsertText.resx">
+      <DependentUpon>InsertText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationToolBox\PresentationViewer.resx">
+      <DependentUpon>PresentationViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationToolBox\SlideManagement.resx">
+      <DependentUpon>SlideManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationToolBox\StyleManagement.resx">
+      <DependentUpon>StyleManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation_Editor.resx">
+      <DependentUpon>Presentation_Editor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Solutions.resx">
+      <DependentUpon>Solutions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="txtDocument.resx">
+      <DependentUpon>txtDocument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisualDocument.resx">
+      <DependentUpon>VisualDocument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisualDocumentEditor.resx">
+      <DependentUpon>VisualDocumentEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisualDocumentToolBox\AddImage.resx">
+      <DependentUpon>AddImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisualDocumentToolBox\AddStyle.resx">
+      <DependentUpon>AddStyle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisualDocumentToolBox\AddText.resx">
+      <DependentUpon>AddText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisualDocumentToolBox\DocumentInfo.resx">
+      <DependentUpon>DocumentInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisualDocumentToolBox\ExportWizard.resx">
+      <DependentUpon>ExportWizard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisualDocumentToolBox\ExternalOpen.resx">
+      <DependentUpon>ExternalOpen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisualDocumentToolBox\StyleManager.resx">
+      <DependentUpon>StyleManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisualDocumentToolBox\VDReader.resx">
+      <DependentUpon>VDReader.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Ninponix Office.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

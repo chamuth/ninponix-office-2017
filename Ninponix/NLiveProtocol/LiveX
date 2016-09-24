@@ -1,0 +1,17 @@
+<!-- //LIVE?PREVIEW?NLPP?NPF -->
+<NPF>
+<NLPP CODE=http://www.ninponix.co.vu/npf/xml>
+<READ XMPL.zi1>
+<script language="javascript">
+	function readxyzcode(int pid){
+		if(pid >= 512){
+			sendnote(Print(x));
+		}
+		else
+		{
+			retry();
+		}
+	}
+</script>
+<READ>
+</NLPP>
