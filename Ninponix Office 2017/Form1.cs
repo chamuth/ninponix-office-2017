@@ -41,7 +41,7 @@ namespace Ninponix_Office
         {
             //Check Ninponix Live Preview Protocol Existence
             string path1;
-            path1 = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86) + "\\Ninponix\\NLiveProtocol";
+            path1 = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86);
 
 
             if (System.IO.Directory.Exists(path1) == false)

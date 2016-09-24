@@ -55,5 +55,10 @@ namespace Ninponix_Office
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
